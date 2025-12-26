@@ -89,7 +89,7 @@ class __TwigTemplate_b5633b0ae9db79166420677c88c0060a extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "./subviews/survey/group_subviews/group_desc.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\themes\\survey\\fruity_twentythree\\views\\subviews\\survey\\group_subviews\\group_desc.twig");
+        return new Source("", "./subviews/survey/group_subviews/group_desc.twig", "C:\\laragon\\www\\backup-sistem-pkl\\themes\\survey\\fruity_twentythree\\views\\subviews\\survey\\group_subviews\\group_desc.twig");
     }
     
     public function checkSecurity()

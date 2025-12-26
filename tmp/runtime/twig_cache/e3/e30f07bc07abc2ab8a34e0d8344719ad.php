@@ -351,7 +351,7 @@ class __TwigTemplate_8ff98b0f097bbf37b50fc6a6ae6b42e0 extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "answerOptionRow.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\application\\views\\questionAdministration\\answerOptionRow.twig");
+        return new Source("", "answerOptionRow.twig", "C:\\laragon\\www\\backup-sistem-pkl\\application\\views\\questionAdministration\\answerOptionRow.twig");
     }
     
     public function checkSecurity()

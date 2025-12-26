@@ -499,7 +499,8 @@ class SurveyDynamic extends LSActiveRecord
                 $isSuperAdmin = Permission::model()->hasGlobalPermission('superadmin', 'read');
                 
                 if (!$isSuperAdmin) {
-                    $command->andWhere('797539X2X15 = :nim', array(':nim' => $currentUsername));
+                    // Filter by NIM Pencacah OR NIM Koortim
+                    $command->andWhere('797539X2X15 = :nim OR 797539X2X16 = :nim', array(':nim' => $currentUsername));
                 }
             }
             
@@ -543,7 +544,8 @@ class SurveyDynamic extends LSActiveRecord
                 $isSuperAdmin = Permission::model()->hasGlobalPermission('superadmin', 'read');
                 
                 if (!$isSuperAdmin) {
-                    $command->andWhere('797539X2X15 = :nim', array(':nim' => $currentUsername));
+                    // Filter by NIM Pencacah OR NIM Koortim
+                    $command->andWhere('797539X2X15 = :nim OR 797539X2X16 = :nim', array(':nim' => $currentUsername));
                 }
             }
             
@@ -749,8 +751,13 @@ class SurveyDynamic extends LSActiveRecord
             // Only apply filter if user is not superadmin
             if (!$isSuperAdmin) {
                 // Column 797539X2X15 contains the NIM of the enumerator (pencacah)
-                // Filter to only show responses where this column matches the logged-in username
-                $criteria->compare('t.797539X2X15', $currentUsername, true);
+                // Column 797539X2X16 contains the NIM of the coordinator (koortim)
+                // Filter to show responses where either column matches the logged-in username
+                $criteria->addCondition(
+                    't.797539X2X15 = :nim OR t.797539X2X16 = :nim',
+                    'AND'
+                );
+                $criteria->params[':nim'] = $currentUsername;
             }
         }
 

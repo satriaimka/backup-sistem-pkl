@@ -159,10 +159,12 @@ class ResponsesController extends LSBaseController
                 $response = SurveyDynamic::model($surveyId)->findByPk($id);
                 if ($response) {
                     // Column 797539X2X15 contains the NIM of the enumerator (pencacah)
-                    $responseNIM = isset($response->{'797539X2X15'}) ? $response->{'797539X2X15'} : '';
+                    // Column 797539X2X16 contains the NIM of the coordinator (koortim)
+                    $responseNIMPencacah = isset($response->{'797539X2X15'}) ? $response->{'797539X2X15'} : '';
+                    $responseNIMKoortim = isset($response->{'797539X2X16'}) ? $response->{'797539X2X16'} : '';
                     
-                    // If NIM doesn't match, deny access
-                    if ($responseNIM !== $currentUsername) {
+                    // If neither NIM matches, deny access
+                    if ($responseNIMPencacah !== $currentUsername && $responseNIMKoortim !== $currentUsername) {
                         App()->user->setFlash('error', gT("You do not have permission to view this response."));
                         $this->redirect(['responses/browse', 'surveyId' => $surveyId]);
                         App()->end();

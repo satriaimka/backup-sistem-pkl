@@ -286,7 +286,7 @@ class __TwigTemplate_abeb037d4f716f8ef6bf8838db6848f4 extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "modals.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\application\\views\\questionAdministration\\modals.twig");
+        return new Source("", "modals.twig", "C:\\laragon\\www\\backup-sistem-pkl\\application\\views\\questionAdministration\\modals.twig");
     }
     
     public function checkSecurity()

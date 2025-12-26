@@ -76,7 +76,7 @@ class __TwigTemplate_8914d08b4ba930b1abc6d7e81055d3c7 extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "/survey/questions/question_help/mandatory_tip.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\application\\views\\survey\\questions\\question_help\\mandatory_tip.twig");
+        return new Source("", "/survey/questions/question_help/mandatory_tip.twig", "C:\\laragon\\www\\backup-sistem-pkl\\application\\views\\survey\\questions\\question_help\\mandatory_tip.twig");
     }
     
     public function checkSecurity()

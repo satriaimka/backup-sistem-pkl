@@ -132,7 +132,7 @@ class __TwigTemplate_ef274ae1ac77ffb610c62b0f73745626 extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "/survey/questions/answer/multipleshorttext/answer.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\application\\views\\survey\\questions\\answer\\multipleshorttext\\answer.twig");
+        return new Source("", "/survey/questions/answer/multipleshorttext/answer.twig", "C:\\laragon\\www\\backup-sistem-pkl\\application\\views\\survey\\questions\\answer\\multipleshorttext\\answer.twig");
     }
     
     public function checkSecurity()

@@ -121,7 +121,7 @@ class __TwigTemplate_41b7158e6c373bdbb52e573ceedcfb1b extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "./subviews/header/progress_bar.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\themes\\survey\\fruity_twentythree\\views\\subviews\\header\\progress_bar.twig");
+        return new Source("", "./subviews/header/progress_bar.twig", "C:\\laragon\\www\\backup-sistem-pkl\\themes\\survey\\fruity_twentythree\\views\\subviews\\header\\progress_bar.twig");
     }
     
     public function checkSecurity()

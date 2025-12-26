@@ -84,7 +84,7 @@ class __TwigTemplate_802a59e97ecf1e4f5d0b80cfa249161f extends Template
 
     public function getSourceContext()
     {
-        return new Source("", "./subviews/privacy/allinone_mode_welcome_privacy.twig", "C:\\laragon\\www\\backup-sistem-pkl\\limesurvey\\themes\\survey\\fruity_twentythree\\views\\subviews\\privacy\\allinone_mode_welcome_privacy.twig");
+        return new Source("", "./subviews/privacy/allinone_mode_welcome_privacy.twig", "C:\\laragon\\www\\backup-sistem-pkl\\themes\\survey\\fruity_twentythree\\views\\subviews\\privacy\\allinone_mode_welcome_privacy.twig");
     }
     
     public function checkSecurity()
